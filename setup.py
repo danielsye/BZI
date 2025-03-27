@@ -2,11 +2,11 @@ from setuptools import setup, find_packages
 
 setup(
     name='BZI', 
-    version='0.1',
+    version='0.0.1.1',
     packages=find_packages(),
     description='A simple DS package for some simple tasks.',
     author='Zherong Ye',
-    author_email='danielsye@hearts-science.com',
+    author_email='danielsye@gmail.com',
     url='https://github.com/danielsye',
     install_requires=[
         'pandas',  
