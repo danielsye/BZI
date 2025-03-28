@@ -7,7 +7,7 @@ setup(
     description='A simple DS package for some simple tasks.',
     author='Zherong Ye',
     author_email='danielsye@gmail.com',
-    url='https://github.com/danielsye',
+    url='https://github.com/danielsye/BZI',
     install_requires=[
         'pandas',  
         'openpyxl',  
