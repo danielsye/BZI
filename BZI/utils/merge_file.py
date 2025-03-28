@@ -2,6 +2,7 @@ import os
 import pandas as pd
 
 def merge_files(directory_path, output_file):
+    os.chdir(directory_path)
     """
     Merges all .csv and .xlsx files in the specified directory into a single output file.
 
@@ -9,7 +10,6 @@ def merge_files(directory_path, output_file):
         directory_path (str): The path to the directory containing the .csv and .xlsx files.
         output_file (str): The name of the output file where the merged content will be saved.
     """
-  os.chdir(directory_path)
     if not os.path.isdir(directory_path):
         raise ValueError(f"The directory '{directory_path}' does not exist.")
 
@@ -36,6 +36,6 @@ def merge_files(directory_path, output_file):
         else:
             raise ValueError("Output file must have a .csv or .xlsx extension.")
         
-        print(f"Merged {len(merged_content)} files into '{output_file}'.")
+        print(f"Merged {len(merged_content)} files into '{output_file}' in '{directory_path}'.")
     else:
         print("No .csv or .xlsx files found in the specified directory.")
