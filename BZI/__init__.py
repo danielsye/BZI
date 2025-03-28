@@ -1,3 +1,5 @@
-from .utils.merge_file import merge_files
+# Import everything from the utils sub-package
+from .utils import *
 
-__all__ = ['merge_files']
+# Optionally define __all__ if you want to specify public interface
+__all__ = ['utils']  # Include other elements if needed
